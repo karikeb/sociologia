@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Narrativa transmedia sobre las apuestas online entre estudiantes secundarios.">
+  <title>Apuestas online | Proyecto de Sociología</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="top">
+    <nav class="wrap nav" aria-label="Navegación principal">
+      <a class="brand" href="#inicio"><span class="mark" aria-hidden="true">✦</span> Proyecto de Sociología</a>
+      <ul><li><a href="#inicio">Inicio</a></li><li><a href="#proyecto">El proyecto</a></li><li><a href="#materiales">Materiales</a></li><li><a href="#creditos">Créditos</a></li></ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="titulo">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Sociología de la Educación · Grupo 14</p>
+          <h1 id="titulo">Apuestas online: <span>más allá de una decisión individual</span></h1>
+          <p class="intro">Esta página reúne tres piezas que se complementan para comprender la problemática de las apuestas online entre estudiantes secundarios, desde una mirada social y educativa.</p>
+          <a class="button primary" href="#materiales">Explorar los materiales</a>
+        </div>
+        <div class="hero-picture">
+          <!-- Agregá la ilustración como assets/img/estudiantes.jpg. Cambiá el texto alternativo si la escena es distinta. -->
+          <img id="hero-image" width="640" height="480" alt="Estudiantes secundarios usando una computadora" hidden>
+          <div class="picture-placeholder" id="hero-placeholder" aria-hidden="true">
+            <div class="illustration"><div class="head left"></div><div class="head right"></div><div class="body left"></div><div class="body right"></div><div class="laptop"><span>✦</span></div><div class="desk"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap materials" id="materiales" aria-labelledby="materiales-titulo">
+      <p class="eyebrow">Narrativa transmedia</p>
+      <h2 id="materiales-titulo">Materiales</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="icon" aria-hidden="true">♫</span>
+          <p class="type">Audio dramatizado</p>
+          <h3>Escuchá la historia</h3>
+          <p class="work-title">Lo que no dice el reglamento</p>
+          <p>Una conversación ficticia entre un docente y un estudiante que invita a reflexionar sobre las apuestas online, las situaciones que atraviesan los adolescentes y el acompañamiento de la escuela.</p>
+          <!-- Colocá el audio en assets/audio con el nombre historia.m4a, historia.mp3 o historia.mp4. -->
+          <div class="card-foot">
+            <audio id="story-audio" controls preload="metadata" aria-label="Lo que no dice el reglamento" hidden></audio>
+            <p class="status" id="audio-status">Audio en preparación</p>
+          </div>
+        </article>
+        <article class="card">
+          <span class="icon" aria-hidden="true">▥</span>
+          <p class="type">Infografía</p>
+          <h3>Mirá los datos</h3>
+          <p>Conocé algunos datos sobre las apuestas online entre adolescentes y su relación con las redes sociales, la publicidad y las experiencias escolares.</p>
+          <!-- Colocá la imagen en assets/img/infografia.png y completá la descripción accesible indicada en el modal. -->
+          <div class="preview">
+            <img id="preview-image" alt="Vista previa de la infografía sobre apuestas online en la adolescencia" hidden>
+            <p class="status" id="image-status">Infografía en preparación</p>
+          </div>
+          <div class="card-foot"><button class="button secondary" id="open-image" type="button" disabled>Ver infografía completa</button></div>
+        </article>
+        <article class="card">
+          <span class="icon" aria-hidden="true">✎</span>
+          <p class="type">Formulario de reflexión</p>
+          <h3>Compartí tu reflexión</h3>
+          <p>Relacioná la historia y los datos con lo que pasa en las redes, en los grupos de pares y en la escuela.</p>
+          <div class="card-foot"><a class="button secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSdNUFqkcPquNT6CDxE3rXtS3QVD8Obow9uFmktYLDoBHIgFBA/viewform?usp=publish-editor" target="_blank" rel="noopener">Abrir en Google Forms</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="project" id="proyecto" aria-labelledby="proyecto-titulo">
+      <div class="wrap project-grid">
+        <div><p class="eyebrow">Una mirada social y educativa</p><h2 id="proyecto-titulo">El proyecto</h2></div>
+        <div><p>Las apuestas online entre estudiantes secundarios se relacionan con el entorno en el que viven. La publicidad digital, las conversaciones entre pares y las condiciones sociales y familiares pueden influir en cómo se presentan y se interpretan las apuestas.</p>
+        <p>El audio propone ponerse en el lugar de un estudiante y un docente. La infografía amplía la mirada hacia el contexto y el formulario invita a pensar cómo puede intervenir y acompañar la escuela.</p></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="creditos">
+    <div class="wrap footer-grid">
+      <div><h2>Créditos</h2><p>Sociología de la Educación · Profesorado de Informática</p></div>
+      <div><strong>Grupo 14</strong><p>Karina Berger · Iván Joel Makarczuk · Ezequiel Michelin</p></div>
+    </div>
+  </footer>
+
+  <dialog id="infographic" aria-labelledby="dialog-title">
+    <div class="dialog-top">
+      <h2 id="dialog-title">Infografía</h2>
+      <form method="dialog"><button type="submit" class="button secondary" autofocus>Cerrar</button></form>
+    </div>
+    <!-- Cuando incorpores la infografía, agregá debajo de la imagen una transcripción de sus datos y textos. -->
+    <img id="full-image" alt="Infografía sobre apuestas online entre adolescentes">
+    <a class="button secondary" id="image-link" target="_blank" rel="noopener">Abrir en otra pestaña</a>
+  </dialog>
+</body>
+</html>
